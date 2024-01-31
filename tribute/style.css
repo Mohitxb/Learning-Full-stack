@@ -2,30 +2,53 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-left: 200px;
-  margin-right: 200px;
 }
-.box{
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(18, 168, 214);
+  height: 80px;
+}
+.link a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: large;
+}
+
+.box {
   display: flex;
   margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .infoBox {
   border: 1px solid;
   float: right;
   width: 300px;
   background-color: rgb(234, 234, 234);
+  margin: 20px;
 }
 
-.infoBox td{
-    padding-left: 20px;
-    padding-top: 10px;
+.infoBox td {
+  padding-left: 20px;
+  padding-top: 10px;
 }
-.infoBox img{
+.infoBox img {
   margin-left: 40px;
 }
-.infoBox h3{
+.infoBox h3 {
   text-align: center;
 }
-.infoBox caption{
+.infoBox caption {
   text-align: center;
+}
+.containt {
+  line-height: 30px;
+  margin-right: 20px;
+}
+.containt a {
+  text-decoration: none;
 }
