@@ -1,0 +1,276 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  font-family: "Russo One", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px;
+  background-color: #1f2544;
+  color: white;
+}
+.left {
+  font-size: x-large;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.right a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: x-large;
+  color: white;
+}
+.img {
+  background-image: url(./images/developer.png);
+  min-height: 100vh;
+
+  background-position: center;
+
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  /*  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+.intro_left {
+  color: aliceblue;
+
+  width: 65%;
+  height: 200px;
+  font-size: xx-large;
+  margin-left: 40px;
+}
+.project_headline h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  background-color: #474f7a;
+  height: 100px;
+  margin: 0;
+}
+/* My skills block starts here */
+#skills {
+  background-image: url(./images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
+  height: 100vh;
+}
+#skills h2 {
+  margin-top: 0;
+  height: 100px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #474f7a;
+  font-size: 4rem;
+}
+.skills_row {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 100px;
+}
+.skills_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 30vw;
+  height: 60vh;
+  background-color: rgba(255, 255, 255, 0.584);
+  backdrop-filter: blur(10px);
+}
+.skills_column:hover {
+  background-color: rgba(225, 178, 232, 0.584);
+  backdrop-filter: blur(0);
+  transition: 880ms ease;
+}
+
+.progress {
+  margin-bottom: 20px;
+}
+.progress h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+  padding: 20px;
+  font-weight: 600;
+  font-size: x-large;
+}
+.bar {
+  height: 20px;
+  width: 90%;
+  border: 4px solid #ffd0ec;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 8px;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+  background: #ffd0ec;
+}
+
+.skills_column:nth-child(1) .progress:nth-child(1) .bar span {
+  width: 80%;
+}
+
+.skills_column:nth-child(1) .progress:nth-child(2) .bar span {
+  width: 60%;
+}
+.skills_column:nth-child(1) .progress:nth-child(3) .bar span {
+  width: 70%;
+}
+.skills_column:nth-child(1) .progress:nth-child(4) .bar span {
+  width: 40%;
+}
+
+.progress:nth-child(1) .bar span {
+  width: 85%;
+}
+
+.progress:nth-child(2) .bar span {
+  width: 80%;
+}
+.progress:nth-child(3) .bar span {
+  width: 75%;
+}
+.progress:nth-child(4) .bar span {
+  width: 60%;
+}
+
+/* My skills block ends here */
+
+/* My Projects department start from here */
+#project {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  column-gap: 50px;
+
+  background-image: url(./images/manos-gkikas-L0tsGE7634E-unsplash.jpg);
+  background-position: center;
+}
+.pro {
+  border: 1px solid black;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 550px;
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.584);
+  backdrop-filter: blur(10px);
+}
+
+.pro:hover {
+  background-color: rgba(225, 178, 232, 0.584);
+  backdrop-filter: blur(0);
+  transition: 880ms ease;
+}
+.pro img {
+  width: 350px;
+  height: 350px;
+  padding: 20px 20px 0 20px;
+}
+
+.pro p {
+  text-align: center;
+}
+/* My Projects department ends  here */
+
+/* My contact start from here */
+
+.contact {
+  display: grid;
+  place-items: center;
+  background-image: url(./images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg);
+  background-position: center;
+  font-size: x-large;
+  margin-top: 0;
+}
+.contact p {
+  background-color: #474f7a;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 4rem;
+}
+.contact form {
+  background-color: #9d92aa9d;
+  backdrop-filter: blur(10px);
+  width: 800px;
+  height: 650px;
+  border: 0.5px solid rgb(216, 176, 176);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.contact form:hover {
+  backdrop-filter: blur(0);
+  transition: 880ms ease;
+}
+
+.contact li {
+  margin-top: 20px;
+}
+.contact input {
+  height: 40px;
+  width: 90%;
+  border-radius: 5px;
+  font-size: large;
+}
+
+#btn {
+  float: right;
+  color: white;
+  font-size: 29px;
+  font-weight: 600;
+  background-color: blue;
+  width: 40%;
+  height: 50px;
+  margin-right: 70px;
+}
+textarea {
+  resize: none;
+  border-radius: 5px;
+  font-size: 29px;
+}
+
+.social {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.social_head {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.logo {
+  padding: 30px 0;
+}
+.logo a {
+  color: rgb(255, 255, 255);
+  align-items: center;
+  margin: 50px;
+  font-size: 3rem;
+}
+
+/* My contact start from here */

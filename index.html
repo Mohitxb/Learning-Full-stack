@@ -3,40 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Developer Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="project.png" type="image/x-icon">
-    <style>
-        body{
-            text-align: center;
-            background-color:whitesmoke;
-        }
-        h1{
-            background-color: rgb(108, 250, 255);
-        }
-        .Projects{
-            border: 2px solid black;
-            display: inline-block;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
     <header>
-        <h1>Resume</h1>
+        <section class="navbar">
+            <div class="left">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="right">
+                    <a href="#home"> Home</a> 
+                    <a href="#skills">Skills</a>
+                    <a href="#project"> Project</a> 
+                    <a href="#contact"> Contact</a> 
+            </div>
+        </section>
     </header>
-    <h1>My Projects</h1>
-    <div class="Projects">
-        <table>
-            <tr>
-                <th>project 1</th>
-                <td><a href="./First 10 Project/tribute/index.html">Tribute</a></td>
-            </tr>
-            <tr>
-                <th>Project 2</th>
-                <td><a href="https.//www.google.com">Google Site</a></td>
-            </tr>
-        </table>
-    </div>
+    
+    <main>
+        <section class="front">
+            <div class="img">
+                <div class="intro_left">
+                    <h2><span class="high">Hi</span> , I am <strong>Mohit</strong> Frontend Developer</h2>
+                    
+                </div>
+                <div class="intro_right">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <section id="skills" >
+         <h2>my skills</h2>
+         <div class="skills_row">
+            <div class="skills_column">
+                <div class="progress">
+                    <h3>html <span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>CSS <span>60%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>JavaScript <span>70%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Python <span>40%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+    
+            <div class="skills_column">
+                <div class="progress">
+                    <h3>Web Design <span>85%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Web developement<span>80%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>Graphic Design <span>75%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3>SEO Marketing<span>60%</span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+    
+    
+         </div>
+        </section>
+    
+        <section class="project_headline">
+            <h1>project</h1>
+            <section id="project">
+            
+                <div class="pro">
+                    <a href="./First 10 Project/tribute/index.html"><img src="./images/pic1.PNG" alt="Project 1 Image"></a>
+                    <h2>The Tribute Page</h2>
+                    <p>This page is about Mahatma Gandhi & his whole Life rfwfefwefwff rwrfewfwf rwerwerwer rwerwerwer </p>
+                </div>
+        
+                <div class="pro" >
+                    <a href="./First 10 Project/Parallax Website/index.html"><img src="./images/Capture.PNG" alt=""></a>
+                    <h2>Parallex website</h2>
+                    <p>This page is about nature with fixed background image and some written text </p>
+                </div>
+        
+                <div class="pro" >
+                    <img src="./images/pic1.PNG" alt="">
+                    <h2>hi</h2>
+                    <p>hi</p>
+                </div>
+        
+                <div class="pro">
+                    <img src="./images/pic1.PNG" alt="">
+                    <h2>hi</h2>
+                    <p>hi</p>
+                </div>
+        
+                <div class="pro">
+                    <img src="./images/pic1.PNG" alt="">
+                    <h2>hi</h2>
+                    <p>hi</p>
+                </div>
+        
+                <div class="pro">
+                    <img src="./images/pic1.PNG" alt="">
+                    <h2>hi</h2>
+                    <p>hi</p>
+                </div>
+            </section>
+        </section>
+    
+        <section class="contact" id="contact">
+            <p>Contact Me</p>
+            <form action="">
+                <ul type="none">
+                    <li>
+                        <label for="name">Full Name :</label><br>
+                        <input placeholder="Name" type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="email">Email :</label><br>
+                        <input placeholder="Email" type="email" name="email" id="email">
+                    </li>
+                    <li><label for="subject">Subject :</label><br>
+                        <input placeholder="Subject" type="text" id="subject">
+                    </li>
+                    <li><label for="message">Message :</label><br>
+                        <textarea placeholder="Message" name="message" id="message" cols="40" rows="5"></textarea>
+                    </li>
+                </ul>
+                <!-- <input type="submit" value="Submit" id="btn"> -->
+                <input type="submit" value="Submit" id="btn">
+            </form>
+            <div class="social">
+                <p class="social_head">i am social media</p>
+                <div class="logo">
+                    <a href="https://www.linkedin.com/in/bandebuchemohit/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="https://github.com/Mohitxb"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100072073339897"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a href="mailto:mohitbandebuche@gmail.com"><i class="fa-brands fa-google-plus fa-2xl"></i></a>
+    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
+
 </body>
 </html>
