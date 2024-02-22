@@ -27,15 +27,16 @@ function decr() {
 function reset() {
     count = 0
     c.textContent = count;
-    d.style.color = "Black"
+    d.textContent = "Even";
+    d.style.color = "Black";
 }
 
 function check(){
  if ( count%2==0){
-    d.textContent = "Even"
-    d.style.color = "Green"
+    d.textContent = "Even";
+    d.style.color = "Green";
  }else{
-    d.textContent ="Odd"
-    d.style.color = "Red"
+    d.textContent ="Odd";
+    d.style.color = "Red";
  }
 }
